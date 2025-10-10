@@ -7,9 +7,9 @@ PyPI project
 
 Python module implementing a library of combinatorics functions.
 
-This PyPI project is part of the
-`Boring Math
-<https://github.com/grscheller/boring-math/blob/main/README.md>`_ projects.
+This pypi project is part of the
+`boring math
+<https://grscheller.github.io/boring-math>`_ projects.
 
 Documentation
 -------------

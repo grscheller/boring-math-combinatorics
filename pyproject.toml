@@ -6,8 +6,8 @@ requires-python = ">=3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
-  "comb",
   "combinations",
+  "permutations",
   "combinatorics",
 ]
 classifiers = [
@@ -21,16 +21,16 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pythonic-fp-circulararray>=5.3.2",
-  "pythonic-fp-fptools>=5.1.1",
-  "pythonic-fp-iterables>=5.1.1",
+  "pythonic-fp-circulararray>=6.0.0",
+  "pythonic-fp-fptools>=5.1.2",
+  "pythonic-fp-iterables>=5.1.2",
 ]
 dynamic = ["description"]
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-combinatorics/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/combinatorics/development/build/html/"
-Homepage = "https://grscheller.github.io/boring-math/homepage/build/html"
+Documentation = "https://grscheller.github.io/boring-math/combinatorics/development/build/html"
+Homepage = "https://grscheller.github.io/boring-math"
 Source = "https://github.com/grscheller/boring-math-combinatorics"
 
 [project.optional-dependencies]

@@ -19,9 +19,6 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 Broke out combinatorics library (all two functions)
 to its own GitHub repo: boring-math-combinatorics
 
-Eventually boring-math-integer-math will be renamed
-to boring-math-number-theory.
-
 Both are par of my Boring Math hobby projects.
 
 ### Version 1.0.2 - PyPI release date 2025-08-04

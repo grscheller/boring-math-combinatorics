@@ -16,7 +16,7 @@
 
 from pythonic_fp.circulararray.auto import CA
 from pythonic_fp.iterables.folding import fold_left
-from boring_math.integer_math.number_theory import coprime
+from boring_math.number_theory import coprime
 
 __all__ = ['comb', 'perm']
 
