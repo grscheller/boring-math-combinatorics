@@ -16,7 +16,7 @@ Documentation
 
 Documentation for this project is hosted on
 `GitHub Pages
-<https://grscheller.github.io/boring-math/combinatorics/development/build/html>`_.
+<https://grscheller.github.io/boring-math/combinatorics>`_.
 
 Copyright and License
 ---------------------
