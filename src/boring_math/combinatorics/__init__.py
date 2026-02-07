@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Geoffrey R. Scheller
+# Copyright 2024-2026 Geoffrey R. Scheller
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Combinatorics Library"""
+"""
+Combinatorics Library
+---------------------
+
+..admonition:: Combinations and permutations
+
+Computation efficient written in pure Python.
+
+"""
 
 from pythonic_fp.circulararray.auto import CA
 from pythonic_fp.iterables.folding import fold_left
@@ -21,7 +29,7 @@ from boring_math.number_theory import coprime
 __all__ = ['comb', 'perm']
 
 __author__ = 'Geoffrey R. Scheller'
-__copyright__ = 'Copyright (c) 2024-2025 Geoffrey R. Scheller'
+__copyright__ = 'Copyright (c) 2024-2026 Geoffrey R. Scheller'
 __license__ = 'Apache License 2.0'
 
 
