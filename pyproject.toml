@@ -45,9 +45,7 @@ build-backend = "flit_core.buildapi"
 name = "boring_math.combinatorics"
 
 [tool.mypy]
-enable_incomplete_feature = "NewGenericSyntax"
 explicit_package_bases = true
-implicit_reexport = false
 local_partial_types = true
 namespace_packages = true
 warn_redundant_casts = true
