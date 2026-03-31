@@ -14,6 +14,7 @@
 
 """
 Combinatorics Library
+---------------------
 
 .. admonition:: Combinations and permutations
 
