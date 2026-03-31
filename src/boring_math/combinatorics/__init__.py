@@ -17,7 +17,7 @@ Combinatorics Library
 
 .. admonition:: Combinations and permutations
 
-Computation efficient written in pure Python.
+    Computation efficient written in pure Python.
 
 """
 
