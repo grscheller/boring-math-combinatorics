@@ -28,30 +28,29 @@ from boring_math.number_theory import coprime
 
 __all__ = ['comb', 'perm']
 
-__author__ = 'Geoffrey R. Scheller'
-__copyright__ = 'Copyright (c) 2024-2026 Geoffrey R. Scheller'
-__license__ = 'Apache License 2.0'
-
-
 def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
-    """C(n,m) - choose m from n.
+    """
+    .. admonition:: C(n, m) - combinations
 
-    - number of ways ``m`` items can be taken from ``n`` items.
-    - geared to works efficiently for Python's arbitrary length integers
+        Number of ways m items can be taken from n items. Geared to
+        works efficiently for Python's arbitrary length integers.
 
-      - slower but comparable to math.comb
+        :param n: Total number of distinct items to choose from.
+        :param m: Number of items to choose, order does not matter.
+        :returns: Number of ways to choose m items from n items.
+        :raises ValueError: If either n < 0 or m < 0.
 
-    - default parameters geared to large values of ``n`` and ``m``
-    - the defaults work reasonably well for smaller (human size) values
-    - for inner loops with smaller values,
+        .. note::
 
-      - use ``target_top = target_bot = 1``
-      - or just use ``math.comb(n, m)`` instead
+            - slower but comparable to math.comb
+            - default parameters geared to large values of n and m
+            - defaults work reasonably well for smaller (human size) values
 
-    :param n: total number of distinct items to choose from
-    :param m: number of items to choose
-    :returns: number of ways to choose ``m`` items from ``n`` items
-    :raises ValueError: if either ``n < 0`` or ``m < 0``
+            .. tip::
+
+                For inner loops with smaller values, use
+                ``target_top = target_bot = 1``, - or just
+                use ``math.comb(n, m)`` instead
 
     """
     # edge cases
@@ -64,7 +63,7 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
     if m > n:
         return 0
 
-    # using C(n, m) = C(n, n-m) to reduce number of factors in calculation
+    # Using C(n, m) = C(n, n-m) to reduce number of factors to calculate.
     if m > (n // 2):
         m = n - m
 
@@ -72,7 +71,8 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
     tops: CA[int] = CA(range(n - m + 1, n + 1))
     bots: CA[int] = CA(range(1, m + 1))
 
-    # Compacting data structures makes algorithm work better for larger values
+    # Compacting data structures makes algorithm
+    # work better for larger arguments.
     size = len(tops)
     while size > target_top:
         size -= 1
@@ -84,8 +84,8 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
         size -= 1
         bots.pushr(bots.popl() * bots.popl())
 
-    # Cancel all factors in denominator before multiplying the remaining factors
-    # in the numerator.
+    # Cancel all factors in denominator before multiplying
+    # the remaining factors in the numerator.
     for bot in bots:
         for _ in range(len(tops)):
             top, bot = coprime(tops.popl(), bot)
@@ -94,19 +94,23 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
             if bot == 1:
                 break
 
-    ans = tops.foldl(lambda x, y: x * y, 1)
-    return ans
+    return tops.foldl(lambda x, y: x * y, 1)
 
 
 def perm(n: int, m: int, /) -> int:
-    """Permutations P(n,m) - number of m orderings taken from n items.
+    """
+    .. admonition:: P(n, m) - permutations
 
-    - about 5 times slower than the math.perm C code
+        Number of orderings of m items taken from n items.
 
-      - keeping around for PyPy 3.12+ or Python going JIT
-      - currently the PyPy team is working on 3.11
+        :param n: Total number of distinct items to order.
+        :param m: Number of items in each ordering.
+        :returns: Number of arrangements of m items from n items.
+        :raises ValueError: If either n < 0 or m < 0.
 
-    :raises ValueError: if ``n < 0`` or ``m < 0``
+        .. warning::
+
+            About 5 times slower than the math.perm C code.
 
     """
     # edge cases
@@ -115,8 +119,6 @@ def perm(n: int, m: int, /) -> int:
 
     if m > n:
         return 0
-
     if n == 0:
         return 1
-
     return fold_left(range(n - m + 1, n + 1), lambda j, k: j * k, 1)

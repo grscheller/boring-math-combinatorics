@@ -170,4 +170,3 @@ class Test_perm:
         assert perm(2002, 200) == math.perm(2002, 200)
         assert perm(2003, 1000) == math.perm(2003, 1000)
         assert perm(130061, 45411) == math.perm(130061, 45411)
-
