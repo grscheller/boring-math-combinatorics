@@ -13,12 +13,9 @@
 # limitations under the License.
 
 """
-Combinatorics Library
----------------------
-
 .. admonition:: Combinations and permutations
 
-    Computation efficient written in pure Python.
+    Computation efficient combinatorics library written in pure Python.
 
 """
 
@@ -37,6 +34,8 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
 
         :param n: Total number of distinct items to choose from.
         :param m: Number of items to choose, order does not matter.
+        :param target_top: Config param to cancel factors before multiplying.
+        :param target_bot: Config param to cancel factors before multiplying.
         :returns: Number of ways to choose m items from n items.
         :raises ValueError: If either n < 0 or m < 0.
 
@@ -49,8 +48,10 @@ def comb(n: int, m: int, /, target_top: int = 700, target_bot: int = 5) -> int:
             .. tip::
 
                 For inner loops with smaller values, use
-                ``target_top = target_bot = 1``, - or just
-                use ``math.comb(n, m)`` instead
+
+                ``target_top = target_bot = 1``
+
+                or just use math.comb(n, m) instead.
 
     """
     # edge cases
@@ -113,12 +114,10 @@ def perm(n: int, m: int, /) -> int:
             About 5 times slower than the math.perm C code.
 
     """
-    # edge cases
     if n < 0 or m < 0:
         raise ValueError('for P(n, m) n and m must be non-negative ints')
 
     if m > n:
         return 0
-    if n == 0:
-        return 1
+
     return fold_left(range(n - m + 1, n + 1), lambda j, k: j * k, 1)

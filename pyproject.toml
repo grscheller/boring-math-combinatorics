@@ -1,9 +1,12 @@
+[build-system]
+requires = ["flit_core>=3.12,<4"]
+build-backend = "flit_core.buildapi"
+
 [project]
 name = "boring-math-combinatorics"
 version = "2.0.1"
 readme = "README.rst"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
 authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
 keywords = [
   "combinations",
@@ -24,22 +27,18 @@ dependencies = [
   "pythonic-fp-fptools>=5.1.2",
   "pythonic-fp-iterables>=5.1.2",
 ]
-dynamic = ["description"]
+description = "Combinatorics library writtten in pure Python"
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-combinatorics/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/combinatorics/development/build/html"
-Homepage = "https://grscheller.github.io/boring-math"
+Documentation = "https://grscheller.github.io/boring-math/homepage/build/html/projects/combinatorics.html"
+Homepage = "https://grscheller.github.io/boring-math/"
 Source = "https://github.com/grscheller/boring-math-combinatorics"
 
 [project.optional-dependencies]
 test = [
   "pytest>=8.4.1",
 ]
-
-[build-system]
-requires = ["flit_core>=3.12,<4"]
-build-backend = "flit_core.buildapi"
 
 [tool.flit.module]
 name = "boring_math.combinatorics"

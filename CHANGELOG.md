@@ -14,12 +14,16 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ## Releases and other important milestones
 
-### Update - 2025-10-08
+### Version 2.0.1 - PyPI release date 2026-05-26
+
+Updated Sphinx documentation to my current standards. Documentation
+now officially in maintenance mode. Do plan to do future new work on
+this project.
+
+### Version 2.0.0 - PyPI release date 2025-10-09
 
 Broke out combinatorics library (all two functions)
 to its own GitHub repo: boring-math-combinatorics
-
-Both are par of my Boring Math hobby projects.
 
 ### Version 1.0.2 - PyPI release date 2025-08-04
 
