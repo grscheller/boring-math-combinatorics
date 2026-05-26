@@ -5,8 +5,8 @@
 #  - later needs to agree with pyproject.toml
 PROJECT_NAME = Combinatorics
 PYPI_NAME = combinatorics
-RELEASE_VERSION = 2.0.0
-DEVEL_VERSION = 2.0.1
+RELEASE_VERSION = 2.0.1
+DEVEL_VERSION = 2.0.2
 CUSTOM_VERSION = 0.0.0
 
 SPHINXOPTS ?=

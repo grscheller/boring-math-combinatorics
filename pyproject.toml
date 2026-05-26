@@ -4,10 +4,12 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "boring-math-combinatorics"
-version = "2.0.1"
+version = "2.0.2"
 readme = "README.rst"
 requires-python = ">=3.13"
-authors = [{ name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" }]
+authors = [
+  { name = "Geoffrey R. Scheller", email = "geoffrey@scheller.com" },
+]
 keywords = [
   "combinations",
   "permutations",
