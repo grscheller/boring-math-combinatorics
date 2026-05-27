@@ -25,6 +25,6 @@ PyPI projects.
 
 .. toctree::
     :caption: API Documentation
-    :maxdepth: 2
+    :maxdepth: 1
 
     api/index

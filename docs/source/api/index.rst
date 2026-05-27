@@ -1,3 +1,7 @@
-.. automodule:: boring_math.combinatorics
-    :members:
-    :special-members:
+boring_math.combinatorics
+=========================
+
+.. toctree::
+    :caption: Combinations and Permutations
+
+    combinatorics
