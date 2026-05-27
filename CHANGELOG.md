@@ -16,7 +16,7 @@ See [Semantic Versioning 2.0.0](https://semver.org).
 
 ### Version 2.0.1 - PyPI release date 2026-05-26
 
-Updated Sphinx documentation to my current standards. Documentation
+Updated Sphinx documentation to most recent standards. Documentation
 now officially in maintenance mode. Do plan to do future new work on
 this project.
 
