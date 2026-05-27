@@ -5,7 +5,7 @@ PyPI project
 `boring-math-combinatorics
 <https://pypi.org/project/boring-math-combinatorics>`_.
 
-Python module implementing a library of combinatorics functions.
+Library for combinatorics.
 
 This pypi project is part of the
 `boring math
