@@ -25,9 +25,9 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pythonic-fp-circulararray>=6.0.0",
-  "pythonic-fp-fptools>=5.1.2",
-  "pythonic-fp-iterables>=5.1.2",
+  "pythonic-fp-circulararray>=6.1.1",
+  "pythonic-fp-fptools>=5.4.0",
+  "pythonic-fp-iterables>=5.1.4",
   "boring-math-number-theory>=2.0.3",
 ]
 description = "Combinatorics library writtten in pure Python"
