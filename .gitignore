@@ -1,9 +1,28 @@
-# Minimal version - only add to when necessary
+# Python generated files
 **/__pycache__/
+*.py[oc]
+build/
 dist/
-docs/build/
-docs/source/conf.py
+wheels/
+*.egg-info
+
+# virtual environments
+.venv/
+
+# uv files
+uv.lock
+
+# pyenv files
+.python-version
+
+# for Neovim
 **/.dmypy.json
 **/.mypy_cache/
-**/.pytest_cache/
 **/.ruff_cache
+
+# pytest files
+**/.pytest_cache/
+
+# build artifacts
+docs/build/
+docs/source/conf.py
