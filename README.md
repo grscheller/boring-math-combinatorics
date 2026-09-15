@@ -4,7 +4,6 @@ Library for combinatorics.
 
 PyPI project
 [boring-math-combinatorics](https://pypi.org/project/boring-math-combinatorics).
-
 This pypi project is part of the
 [boring math](https://grscheller.github.io/boring-math) projects.
 
