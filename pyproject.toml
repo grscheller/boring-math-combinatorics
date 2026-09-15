@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "boring-math-combinatorics"
-version = "2.0.2"
+version = "2.1.0"
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
@@ -34,7 +34,6 @@ description = "Combinatorics library."
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-combinatorics/blob/main/CHANGELOG.md"
-Documentation = "https://grscheller.github.io/boring-math/homepage/build/html/projects/combinatorics.html"
 Homepage = "https://grscheller.github.io/boring-math/"
 Source = "https://github.com/grscheller/boring-math-combinatorics"
 
