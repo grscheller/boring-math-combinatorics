@@ -118,7 +118,7 @@ I made an API breaking change. Sorry...
 ### Version 0.3.1 - PyPI release date 2024-03-09
 
 - reflecting grscheller.circular-array PyPI dependency change
-  - dependencies = ["grscheller.circular-array >= 0.2.0, < 2.1"]
+  - `dependencies = ["grscheller.circular-array >= 0.2.0, < 2.1"]`
 
 ### Version 0.3.0 - PyPI release date 2024-03-02
 
@@ -150,7 +150,7 @@ I made an API breaking change. Sorry...
 ### Version 0.1.3 - PyPI release date 2024-02-20
 
 - Forgot to update pyproject.toml dependencies
-  - dependencies = ["grscheller.circular-array >= 0.1.1, < 1.1"]
+  - `dependencies = ["grscheller.circular-array >= 0.1.1, < 1.1"]`
 
 ### Version 0.1.2 - PyPI release date 2024-01-30
 
