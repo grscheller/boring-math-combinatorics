@@ -34,6 +34,7 @@ description = "Combinatorics library."
 
 [project.urls]
 Changelog = "https://github.com/grscheller/boring-math-combinatorics/blob/main/CHANGELOG.md"
+Documentation ="https://grscheller.github.io/boring-math-combinatorics/release/html/"
 Homepage = "https://grscheller.github.io/boring-math/"
 Source = "https://github.com/grscheller/boring-math-combinatorics"
 
